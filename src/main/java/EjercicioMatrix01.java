@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class EjercicioMatrix01 {
@@ -9,6 +10,18 @@ public class EjercicioMatrix01 {
         // representará a un jugador. Tener en cuenta el siguiente diagrama para llevar a cabo el planteo:
         //Nota: tener en cuenta que el promedio de goles puede dar como resultado un número que NO SEA ENTERO.
         Scanner input = new Scanner(System.in);
+        int[][] tablaGoles = new int[5][3];
+        int sumaDeGoles = 0;
 
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.println("Ingrese el número de fila del jugador: " + i + " los goles de los tres partidos: " + j);
+                int cargaUsuario = input.nextInt();
+                tablaGoles[i][j] = cargaUsuario;
+                sumaDeGoles += cargaUsuario;
+            }
+        }
+        System.out.println(Arrays.deepToString(tablaGoles));
+        System.out.println("Promedio de goles = " + (1.0 * sumaDeGoles / 15));
     }
 }
