@@ -13,7 +13,7 @@ public class EjercicioMatrix04 {
         // cliente ingrese por teclado y mostrarle de forma automática los posibles acompañamientos del mismo.
 
         Scanner input = new Scanner(System.in);
-        String[][] matriz = new String[2][5];
+        String[][] matriz = new String[20][5];
 
         System.out.println("A continuación deberá cargar " + matriz.length + " platos");
 
