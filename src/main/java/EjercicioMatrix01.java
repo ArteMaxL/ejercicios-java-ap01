@@ -21,7 +21,8 @@ public class EjercicioMatrix01 {
                 sumaDeGoles += cargaUsuario;
             }
         }
+        System.out.println("Tabla de goles cargada:\n------------------------------------------");
         System.out.println(Arrays.deepToString(tablaGoles));
-        System.out.println("Promedio de goles = " + (1.0 * sumaDeGoles / 15));
+        System.out.println("Promedio de goles = " + (double)Math.round(1.00 * sumaDeGoles / 15));
     }
 }
